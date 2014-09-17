@@ -1,7 +1,7 @@
 (setq
  custom-file (expand-file-name "~/.emacs.d/custom.el")
  require-final-newline 't
- multi-term-program "/bin/zsh"
+ multi-term-program "/bin/bash"
  inhibit-startup-message t
  org-agenda-files (list "~/.org/home.org" "~/.org/work.org"))
 

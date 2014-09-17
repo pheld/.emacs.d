@@ -1,7 +1,7 @@
 (add-hook 'find-file-hook 'delete-trailing-whitespace)
-(add-hook 'find-file-hook 'untabify-all)
+(add-hook 'find-file-hook (lambda () (untabify-all '("project.pbxproj"))))
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
-(add-hook 'before-save-hook 'untabify-all)
+(add-hook 'before-save-hook (lambda () (untabify-all '("project.pbxproj"))))
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
 (add-hook 'objc-mode-hook 'objc-mode-customizations)
 
